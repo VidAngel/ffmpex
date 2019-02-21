@@ -34,7 +34,7 @@ defmodule FFmpex.Options.Video.Libavformat do
     hls_time:                    %Option{name: "-hls_time", require_arg: true, contexts: [:output]},
     hls_list_size:               %Option{name: "-hls_list_size", require_arg: true, contexts: [:output]},
     hls_segment_filename:        %Option{name: "-hls_segment_filename", require_arg: true, contexts: [:output]},
-    master_pl_name:              %Option{name: "-master_pl_name", require_arg: true, contexts: [:output. :global]},
+    master_pl_name:              %Option{name: "-master_pl_name", require_arg: true, contexts: [:output, :global]},
     cc_stream_map:               %Option{name: "-cc_stream_map", require_arg: true, contexts: [:output, :global]},
     skip_initial_bytes:          %Option{name: "-skip_initial_bytes", require_arg: true, contexts: [:input]},
     correct_ts_overflow:         %Option{name: "-correct_ts_overflow", require_arg: true, contexts: [:input]},
