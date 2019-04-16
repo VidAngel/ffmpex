@@ -39,6 +39,7 @@ defmodule FFmpex.Options.Video.Libavformat do
     skip_initial_bytes:          %Option{name: "-skip_initial_bytes", require_arg: true, contexts: [:input]},
     correct_ts_overflow:         %Option{name: "-correct_ts_overflow", require_arg: true, contexts: [:input]},
     flush_packets:               %Option{name: "-flush_packets", require_arg: true, contexts: [:output]},
+    map_metadata:                %Option{name: "-map_metadata", require_arg: true, contexts: [:output]},
     output_ts_offset:            %Option{name: "-output_ts_offset", require_arg: true, contexts: [:output]},
     format_whitelist:            %Option{name: "-format_whitelist", require_arg: true, contexts: [:input]},
     dump_separator:              %Option{name: "-dump_separator", require_arg: true, contexts: [:input]},
